@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../widgets/newsfeed_card.dart';
+import '../widgets/post_card.dart';
 
 class NewsFeedScreen extends StatelessWidget {
   const NewsFeedScreen({super.key});
@@ -7,20 +7,28 @@ class NewsFeedScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-      children: const [
-        NewsFeedCard(
+      children: [
+        PostCard(
           userName: 'Cyrus Robles',
           postContent: 'Kamusta',
-          numOfLikes: 100,
+          numOfLikes: 2000,
+          date: 'October 11',
+          imageUrl:
+              'https://www.petplace.com/article/breed/media_15ad72c2fdb39acf09aafa9934912c89bfa08665a.jpeg?width=1200&format=pjpg&optimize=medium',
+          profileImageUrl:
+              'https://image.petmd.com/files/inline-images/shiba-inu-black-and-tan-colors.jpg?VersionId=pLq84BEOjdMjXeDCUJJJLFPuIWYsVMUU',
+        ),
+        PostCard(
+          userName: 'Roben Juanatas',
+          postContent: 'Kicking off the holiday season with ICpEP-NCR!',
+          numOfLikes: 200,
+          date: 'December 2',
+        ),
+        PostCard(
+          userName: 'Cyrus Robles',
+          postContent: 'Kamusta',
           date: 'October 11',
         ),
-        // NewsFeedCard(
-        //   userName: 'Roben Juanatas',
-        //   postContent: 'Kicking off the holiday season with ICpEP-NCR!',
-        //   numOfLikes: 200,
-        //   hasImage: true,
-        //   date: 'December 2',
-        // ),
       ],
     );
   }

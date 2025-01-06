@@ -17,14 +17,14 @@ class _NotificationScreenState extends State<NotificationScreen> {
       width: ScreenUtil().screenWidth,
       child: const Column(
         children: [
-          notif.Notification(name: 'Test', post: 'Post', description: 'Description',),
+          notif.Notification(
+            name: 'Test',
+            post: 'Post',
+            description: 'Description',
+          ),
           Divider(),
         ],
       ),
     );
   }
 }
-
-
-
-
